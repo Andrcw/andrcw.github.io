@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
     
     <!-- My Custom CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -26,52 +26,60 @@
 
 <body>
     <!-- PAGE ONE: FRONT PAGE -->
-    <div class="col-md-12" id = "page1">
-        <div class = "container" style="padding-left:100px; padding-right:100px;">
-            <div class = "col-md-5 col-md-push-7" style="padding-left:50px; padding-right:50px">
-                <h1> <img src="images/PortraitLogo.svg" alt=""/></h1> <br>
-            </div>
-            
-            <div class = "col-md-7 col-md-pull-5">
-              <h1> Hi, my name is <span class="color_orange"> Andrew Nguyen</span>!</h1>
-              <Br>
-                  <h2> I am currently taking <span class="color_orange">ART 483E</span>, Computer Assisted Graphics in Summer 2018.</h2>
-            </div>
-        </div>
+    <div id = "page1">
+        <div class = "container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class = "row">
+                    <div class = "col-md-5 col-md-push-7">
+                        <h1> <img src="images/PortraitLogo.svg" alt=""/></h1> <br>
+                    </div> <!-- col-md-5 col-md-push-7 -->
+
+                    <div class = "col-md-7 col-md-pull-5">
+                        <h1> Hi, my name is <span class="color_orange"> Andrew Nguyen</span>!</h1>
+                        <h2> I am currently taking <span class="color_orange">ART 483E</span>, Computer Assisted Graphics in Summer 2018.</h2>
+                    </div> <!-- col-md-7 col-md-pull-5 -->
+                </div> <!-- row -->
+            </div> <!-- col-m-8 col-md-offset-2 -->
+        </div> <!-- container -->
     </div> <!-- page1 -->
     
-    <div class = "col-md-12" id = "page2">
-        <div class = "container" style="padding-left:100px; padding-right:100px;">
+    <div id = "page2">
+        <div class = "container">
+          <div class="col-md-8 col-md-offset-2">
+                    
             <!-- FIRST ROW: PROJECT ONE -->
-            <div class = "row" style="margin-bottom:50px;">
-                <div class = "col-sm-4">
-                    <h1><img src="images/PlaceholderBox.svg" alt=""/></h1>
-                </div> <!-- col-sm-4 -->
-                <div class = "col-md-8">
-                    <h1> Project 1 </h1>
-                    <h2> This project is to create a website that showcases you - about yourself, your design philosophy, favorite apps and things to do. </h2>
-                </div> <!-- col-md-8 -->
-            </div> <!-- row -->
-
-            <!-- FIRST ROW: PROJECT TWO -->
-            <div class = "row">
-                <div class = "col-sm-4">
-                    <h1><img src="images/PlaceholderBox.svg" alt=""/></h1>
-                </div> <!-- col-sm-4 -->
-                <div class = "col-md-8">
-                  <h1>Project 2 </h1>
-                  <h2> This is project two. </h2>
-                </div> <!-- col-md-8 -->
-            </div> <!-- row -->
-            
+                    <div class = "row">
+                        <div class = "col-md-5">
+                            <img src="images/PlaceholderBox.svg" alt=""/>
+                        </div> <!-- col-md-5 -->
+                        <div class = "col-md-7">
+                            <h1 class="project"> Project 1 </h1>
+                            <h3> This project is to create a website that showcases you - about yourself, your design philosophy, favorite apps and things to do. </h3>
+                            <a href="#" target="_blank"><div class="a-btn"> VIEW PROJECT </div></a>
+                        </div> <!-- col-md-87-->
+                  </div> <!-- row -->  
+              
+            <!-- SECOND ROW: PROJECT TWO -->
+                    <div class = "row">
+                        <div class = "col-md-5">
+                            <img src="images/PlaceholderBox.svg" alt=""/>
+                        </div> <!-- col-md-5 -->
+                        <div class = "col-md-7">
+                            <h1 class="project"> Project 2 </h1>
+                            <h3> This project has not been assigned yet. </h3>
+                            <a href="#" target="_blank"><div class="a-btn"> VIEW PROJECT </div></a>
+                        </div> <!-- col-md-87-->
+                  </div> <!-- row -->  
+              
+            </div> <!-- col-md-8 col-md-offset-2 -->
         </div> <!-- container -->
     </div> <!-- page2 -->
     
     <!-- FOOTER -->
-    <div class = "col-md-12" id ="pagefooter">
+    <div id ="pagefooter">
         <div class = "container">
             <div class = "col-md-12 text-center">
-                <h8> &copy; 2018 Andrew Nguyen | All Rights Reserved.  </h8>
+                <footer> &copy; 2018 Andrew Nguyen | All Rights Reserved.</footer>
             </div>
         </div>
     </div>

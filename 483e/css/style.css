@@ -50,3 +50,43 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+h1.project {
+    font-family: Montserrat;
+    font-weight: 100;
+    font-size: 30px;
+}
+h3 {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 100;
+}
+.a-btn {
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+    font-family: Montserrat;
+    font-size: 10px;
+}
+.a-btn:hover {
+    color: white;
+    background: orange;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+footer {
+    font-family: Montserrat;
+    font-size: 10px;
+}
