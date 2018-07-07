@@ -22,6 +22,10 @@
     <!-- My Custom CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     
+    <!-- Animate.css -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    
+    
 </head>
 
 <body>
@@ -31,10 +35,10 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class = "row">
                     <div class = "col-md-5 col-md-push-7">
-                        <h1> <img src="images/PortraitLogo.svg" alt=""/></h1> <br>
+                        <div class = "animated tada"><img src="images/PortraitLogo.svg" alt=""/></div>
                     </div> <!-- col-md-5 col-md-push-7 -->
 
-                    <div class = "col-md-7 col-md-pull-5">
+                    <div class = "col-md-7 col-md-pull-5 animated fadeIn">
                         <h1> Hi, my name is <span class="color_orange"> Andrew Nguyen</span>!</h1>
                         <h2> I am currently taking <span class="color_orange">ART 483E</span>, Computer Assisted Graphics in Summer 2018.</h2>
                     </div> <!-- col-md-7 col-md-pull-5 -->
@@ -48,26 +52,26 @@
           <div class="col-md-8 col-md-offset-2">
                     
             <!-- FIRST ROW: PROJECT ONE -->
-                    <div class = "row">
+                    <div class = "row wow fadeInLeft">
                         <div class = "col-md-5">
                             <img src="images/PlaceholderBox.svg" alt=""/>
                         </div> <!-- col-md-5 -->
                         <div class = "col-md-7">
                             <h1 class="project"> Project 1 </h1>
                             <h3> This project is to create a website that showcases you - about yourself, your design philosophy, favorite apps and things to do. </h3>
-                            <a href="#" target="_blank"><div class="a-btn"> VIEW PROJECT </div></a>
+                            <a href="#" target="_blank"><div class="a-btn wow jello" data-wow-delay="0.5s"> VIEW PROJECT </div></a>
                         </div> <!-- col-md-87-->
                   </div> <!-- row -->  
               
             <!-- SECOND ROW: PROJECT TWO -->
-                    <div class = "row">
+                    <div class = "row wow fadeInLeft">
                         <div class = "col-md-5">
                             <img src="images/PlaceholderBox.svg" alt=""/>
                         </div> <!-- col-md-5 -->
                         <div class = "col-md-7">
                             <h1 class="project"> Project 2 </h1>
                             <h3> This project has not been assigned yet. </h3>
-                            <a href="#" target="_blank"><div class="a-btn"> VIEW PROJECT </div></a>
+                            <a href="#" target="_blank"><div class="a-btn wow jello" data-wow-delay="0.5s"> VIEW PROJECT </div></a>
                         </div> <!-- col-md-87-->
                   </div> <!-- row -->  
               
@@ -84,7 +88,11 @@
         </div>
     </div>
     
-
+    
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     
 </body>
 </html>
