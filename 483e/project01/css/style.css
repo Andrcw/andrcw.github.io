@@ -25,6 +25,10 @@ h2 {
 .color_orange {
     color: #ff671d;
 }
+#page0 {
+    background-color: #1b3d6e;
+    min-height: 100vh;
+}
 #page1 {
     background-color: #EEF0F1;
     padding-top: 200px;
@@ -93,4 +97,22 @@ footer {
 a:hover {
     text-decoration: none;
     color: #ff671d;
+}
+.svg_logo{
+    width: 500px;
+}
+.vertical-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px){
+#page0 {
+    background-color: #A73638;
+    min-height: 70vh;
+}
+.svg_logo {
+    width: 221px;
+}
 }
