@@ -20,11 +20,15 @@
     <!-- Animate.css -->
     <link href="../css/animate.css" rel="stylesheet" type="text/css">
     
+    <!-- Gotham font -->
+    <link href="../css/gotham font/gotham.css" rel="stylesheet" type="text/css">
+    
     
 </head>
 
 <body>
     <!-- PAGE ZERO - ANIMATION PAGE -->
+<div id = "page0container">
     <div id = "page0" class = "vertical-align">
         <div class = "container vertical-align">
                         <!-- SVG LOGO -->
@@ -56,24 +60,20 @@
                         <!-- SVG LOGO END -->
         </div> <!-- container -->
     </div> <!-- page0 -->
+    </div> <!-- page0container -->
     
-    
-    <div id = "page2">
-        <div class = "container">
-          <div class="col-md-8 col-md-offset-2">
-                    
-            <!-- FIRST ROW: PROJECT ONE -->
-                    <div class = "row wow fadeInLeft">
-                        <div class = "col-md-5">
-                            
-                        </div> <!-- col-md-5 -->
-                        <div class = "col-md-7">
-                            <h1 class="type-it project"> Project 1 </h1>
-                            <h3> This project is to create a website that showcases you - about yourself, your design philosophy, favorite apps and things to do. </h3>
-                            <a href="#" target="_blank"><div class="a-btn wow fadeIn" data-wow-delay="0.5s"> VIEW PROJECT </div></a>
-                        </div> <!-- col-md-87-->
-                  </div> <!-- row -->  
-    
+    <!-- PAGE ONE: MAIN PAGE -->
+    <div id = "page1">
+        <div id ="page100height" class="vertical-align">
+                <div class = "container">
+                    <div class="col-md-12 text-center">
+                        <h1 class="color_white"> Discover <span id="element"></span></h1>
+                        <h2> hello </h2>
+                    </div>
+                
+                </div> <!-- container -->  
+        </div> <!-- page100height -->
+    </div> <!-- page1 -->
     
     <!-- Animate.css WOW plugin -->
     <script src="../js/wow.min.js"></script>
@@ -85,6 +85,15 @@
     <script src="../js/typeit.min.js"></script>
               
     <!-- VIVUS SVG DRAWING JS -->
-    <script src="../js/vivus.min.js"></script>
+<script src="../js/vivus.min.js"></script>
+    
+    <!-- FADE OUT -->
+<script>
+        $( document ).ready(function(){
+            $('#page0').fadeIn('slow', function(){
+               $('#page0').delay(8000).fadeOut(); 
+            });
+        });
+    </script>
 </body>
 </html>
