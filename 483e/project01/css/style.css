@@ -16,8 +16,11 @@ body, html {
 .color_white {
     color: #FFFFFF;
 }
+.color_gray {
+    color: #bcbec0;
+}
 #page0 {
-    background-color: #1b3d6e;
+    background-color: #41444b;
     min-height: 100vh;
 }
 #page1 {
@@ -32,22 +35,13 @@ img {
 }
 #page2 {
     background-color: #FFFFFF;
-    padding-top: 80px;
-    padding-right: 80px;
-    padding-bottom: 80px;
-    padding-left: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 #pagefooter {
     background-color: #E3E3E3;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
 }
 h1 {
     font-family: GothamPro;
@@ -56,41 +50,31 @@ h1 {
     font-style: Medium;
 }
 h2 {
-    font-family: Montserrat;
-    font-size: 18px;
+    font-family: GothamPro;
+    font-size: 20px;
     font-weight: 400;
+    letter-spacing: 5px;
 }
-h3 {
-    font-family: Montserrat;
-    font-size: 15px;
+p {
+    font-family: GothamPro;
+    font-size: 12px;
     font-weight: 100;
-}
-.a-btn {
-    color: black;
-    background: transparent;
-    border: 1px solid black;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    transition: all 0.2s ease-in-out;
-    font-family: Montserrat;
-    font-size: 10px;
-}
-.a-btn:hover {
-    color: white;
-    background: #ff671d;
-    border: 1px solid transparent;
-    cursor: pointer;
 }
 footer {
     font-family: Montserrat;
     font-size: 10px;
 }
-a:hover {
+.under:hover {
+    color: #000000;
+    border-bottom-color: #000000;
     text-decoration: none;
-    color: #CECECE;
+}
+.under {
+    border-width: medium;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .svg_logo{
     width: 500px;
@@ -101,6 +85,12 @@ a:hover {
     align-items: center;
     width: 100%;
 }
+.vertical-align-test{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%
+}
 #page0container {
     position: absolute;
     width: 100%;
@@ -110,7 +100,49 @@ a:hover {
 #page100height {
     min-height: 100vh;
 }
-
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#nav {
+    position: absolute;
+}
+li {
+    font-family: GothamPro;
+    font-size: 12px;
+    font-weight: 100;
+}
+.above {
+    z-index: 5;
+    position: absolute;
+    top: 10%;
+    right: calc(50% - 160px);
+    text-align: center;
+}
+.img-container {
+    text-align: center;
+    position: relative;
+}
+.box {
+    background-color: #A52F31;
+    position: relative;
+    text-align: center;
+    opacity: 1;
+    z-index: 0;
+    height: 365px;
+    width: 300px;
+    display: inline-block;
+}
+.below {
+    z-index: 1;
+    position: absolute;
+    top: -7%;
+    left: calc(50% - 180px);
+}
 @-webkit-keyframes cssAnimation {
     to {
         width:0;

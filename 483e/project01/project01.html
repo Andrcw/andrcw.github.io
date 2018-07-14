@@ -29,7 +29,7 @@
 <body>
     <!-- PAGE ZERO - ANIMATION PAGE -->
 <div id = "page0container">
-    <div id = "page0" class = "vertical-align">
+    <div id = "page0" class = "vertical-align wow fadeIn">
         <div class = "container vertical-align">
                         <!-- SVG LOGO -->
                         <div class = "svg_logo"> 
@@ -63,17 +63,70 @@
     </div> <!-- page0container -->
     
     <!-- PAGE ONE: MAIN PAGE -->
-    <div id = "page1">
-        <div id ="page100height" class="vertical-align">
-                <div class = "container">
-                    <div class="col-md-12 text-center">
-                        <h1 class="color_white"> Discover <span id="element"></span></h1>
-                        <h2> hello </h2>
-                    </div>
+<div id = "page1">
+    <!-- NAVIGATION -->
+  <div class = "col-md-10 col-md-offset-1" id="nav">
+    <nav class="navbar">
+            <br>
+            <ul class="nav navbar-nav navbar-left">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <p class="color_white">ANDREW NGUYEN</p></a>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <p class="color_white">MENU<span class="caret"></span></p></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Likes</a></li>
+                </ul>
+            </ul>
+    </nav> <!-- nav -->
+  </div> <!-- col-md-8 -->
+
+    <!-- MAIN HOMEPAGE -->
+    <div id ="page100height" class="vertical-align">
+            <div class = "container wow fadeInUp" data-wow-delay="7.5s">
+                <div class="col-md-12 text-center">
+                    <h1 class="color_white"> Discover <span id="example3"></span></h1>
+                    <p class="color_gray"> Explore my website and find out all about me <br> and my thoughts on design. </p>
+                </div>
                 
-                </div> <!-- container -->  
-        </div> <!-- page100height -->
-    </div> <!-- page1 -->
+            </div> <!-- container -->  
+    </div> <!-- page100height -->
+  </div> 
+    <!-- page1 -->
+    
+    
+    <!-- PAGE 2: ABOUT -->
+    <div id = "page2">
+        <div class = "container">
+                <div class = "col-md-10 col-md-offset-1">
+            <!-- FIRST ROW: PROJECT ONE -->
+                    <div class = "row">
+                        <div class = "col-md-6 img-container">
+                                <div class = "box"> </div>
+                                <div class = "below">
+                                    <img src="images/Color1.png" alt="" width="288" height="216"/>
+                                </div>
+                                <div class = "above">
+                                    <img src="images/Me1.png" alt="" width="216" height="288"/>
+                                </div> <!-- above -->
+                        </div> <!-- col-md-6 -->
+                        <!-- col-md-5 -->
+                        <div class = "col-md-6 wow fadeInUp">
+                            <h2 class="heading">ABOUT ME.</h2>
+                            <p> Hello, my name is Andrew Nguyen. I was born and raised in Orange, California. I love to design, eat, and play video games. My favorite foods are korean barbeque, sushi, chicken wings, and pasta. I also love watching movies and TV shows. Some of my favorite shows are The Office, Parks and Recreation, Bob’s Burgers and Black Mirror.
+                            <br><br>
+                            I have always been designing and creating from a young age. I am currently pursuing a Bachelor of Fine Arts in Graphic and Interactive Design and a minor in Computer Science at California State University, Fullerton. </p>
+                        </div> <!-- col-md-8-->
+                  </div> <!-- row -->  
+            </div> <!-- col-md-10 offset-1 -->
+        </div> <!-- container -->
+    </div> <!-- page2 -->
+    
     
     <!-- Animate.css WOW plugin -->
     <script src="../js/wow.min.js"></script>
@@ -91,7 +144,7 @@
 <script>
         $( document ).ready(function(){
             $('#page0').fadeIn('slow', function(){
-               $('#page0').delay(8000).fadeOut(); 
+               $('#page0').delay(7000).fadeOut(); 
             });
         });
     </script>
