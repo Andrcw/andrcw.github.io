@@ -9,9 +9,12 @@
     <meta name="keywords" content="Andrew Nguyen, Andrew, Nguyen, CSUF, California, Designer, Graphic Design, Graphic Designer, 483E, ART, Andrcw, portfolio, project, 1, project 1">
     <title>Andrew Nguyen - Project 1</title>
     
+    <!-- Smooth Scrolling -->
+    <script src="../js/jquery.smoothscroll.js"></script>
+    
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <!-- My Custom CSS -->
@@ -22,6 +25,9 @@
     
     <!-- Gotham font -->
     <link href="../css/gotham font/gotham.css" rel="stylesheet" type="text/css">
+    
+
+    
     
     
 </head>
@@ -63,7 +69,7 @@
     </div> <!-- page0container -->
     
     <!-- PAGE ONE: MAIN PAGE -->
-<div id = "page1">
+<div id = "Home">
     <!-- NAVIGATION -->
   <div class = "col-md-10 col-md-offset-1" id="nav">
     <nav class="navbar">
@@ -75,9 +81,9 @@
             <ul class="nav navbar-nav navbar-right">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <p class="color_white">MENU<span class="caret"></span></p></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Philosophy">Philosophy</a></li>
                     <li><a href="#">Process</a></li>
                     <li><a href="#">Apps</a></li>
                     <li><a href="#">Likes</a></li>
@@ -100,8 +106,8 @@
     <!-- page1 -->
     
     
-    <!-- PAGE 2: ABOUT -->
-    <div id = "page2">
+    <!-- ABOUT PAGE -->
+    <div id = "About">
         <div class = "container">
                 <div class = "col-md-10 col-md-offset-1">
             <!-- FIRST ROW: PROJECT ONE -->
@@ -109,24 +115,169 @@
                         <div class = "col-md-6 img-container">
                                 <div class = "box"> </div>
                                 <div class = "below">
-                                    <img src="images/Color1.png" alt="" width="288" height="216"/>
-                                </div>
+                                    <img id = "ImgGallery1" src="images/Color1.png" alt="" width="288" height="216"/>
+                                </div> <!-- below -->
                                 <div class = "above">
-                                    <img src="images/Me1.png" alt="" width="216" height="288"/>
+                                    <img id = "ImgGallery" src="images/Me1.png" alt="" width="216" height="288">
                                 </div> <!-- above -->
+
                         </div> <!-- col-md-6 -->
+                        
                         <!-- col-md-5 -->
                         <div class = "col-md-6 wow fadeInUp">
                             <h2 class="heading">ABOUT ME.</h2>
                             <p> Hello, my name is Andrew Nguyen. I was born and raised in Orange, California. I love to design, eat, and play video games. My favorite foods are korean barbeque, sushi, chicken wings, and pasta. I also love watching movies and TV shows. Some of my favorite shows are The Office, Parks and Recreation, Bob’s Burgers and Black Mirror.
                             <br><br>
                             I have always been designing and creating from a young age. I am currently pursuing a Bachelor of Fine Arts in Graphic and Interactive Design and a minor in Computer Science at California State University, Fullerton. </p>
-                        </div> <!-- col-md-8-->
+                            <div class="a-btn" onclick="rotateGallery()" > VIEW IMAGES </div>
+                      </div> <!-- col-md-8-->
                   </div> <!-- row -->  
-            </div> <!-- col-md-10 offset-1 -->
-        </div> <!-- container -->
-    </div> <!-- page2 -->
+          </div> <!-- col-md-10 offset-1 -->
+      </div> <!-- container -->
+</div> <!-- page2 -->
     
+    
+    <!-- Design Process -->
+    <div id = "Process">
+        <div class = "container">
+            <div class = "col-md-10 col-md-offset-1">
+                <div class = "row">
+                    <div class = "col-md-3 col-md-push-9">
+                        <h2 class="heading">DESIGN PROCESS.</h2><br>
+                    </div>
+                    <div class = "col-md-9 col-md-pull-3">
+                        <div class = "col-xs-3 text-center wow fadeInUp" data-wow-delay="0s"><img src="images/Icon2.svg" alt="" width="50px"/> <h3> Research </h3></div>
+                        <div class = "col-xs-3 text-center wow fadeInUp" data-wow-delay=".5s"><img src="images/Icon1.svg" alt="" width="50px"/> <h3> Sketch </h3></div>
+                        <div class = "col-xs-3 text-center wow fadeInUp" data-wow-delay="1s"><img src="images/Icon3.svg" alt="" width="50px"/> <h3> Revise </h3></div>
+                        <div class = "col-xs-3 text-center wow fadeInUp" data-wow-delay="1.5s"><img src="images/Icon4.svg" alt="" width="50px"/> <h3> Finalize </h3></div>
+                    </div> <!-- col-md-8 -->
+                </div> <!-- row -->
+            </div> <!-- col-md-10 offset-1 -->
+    </div> <!-- container -->
+    </div> <!-- Process -->
+    
+    
+        
+    <!-- DESIGN PHILOSOPHY -->
+    <div id = "Philosophy">
+        <div class = "container">
+            <div class = "col-md-10 col-md-offset-1">
+                <div class = "row">
+                    <div class = "col-md-6 img-container col-md-push-6">
+                        <div class = "box"> </div>
+                            <div class = "below1">
+                                <img src="images/IdentityColor.png" alt="" width="288" height="216"/>
+                            </div> <!-- below -->
+                            <div class = "above1">
+                                <img src="images/Identity.jpg" alt="" width="216">
+                            </div> <!-- above -->
+                    </div> <!-- rol-md-6 -->
+                    <div class = "col-md-6 wow fadeInUp col-md-pull-6">
+                        <h2 class="heading">DESIGN PHILOSOPHY.</h2>
+                        <p> My design philosophy is that it is necessary to follow the rules of design but also it needs to be broken at times. I believe that if everyone follows the exact rules and formulas of design, all design will be the same and the creativity and spark will disappear. When you break the rules of design you will innovate and create the new norm that people will follow. I also believe that it is important to stay on top of design trends because they are always changing and you want to be relevant when it comes to design. </p>
+                    </div> <!-- col-md-6 -->
+                </div> <!-- row -->
+            </div> <!-- col-md-10 offset-1 -->
+        </div><!-- container -->
+    </div> <!-- Design Philosophy End -->
+    
+    <!-- MY LIKES -->
+    <div id = "Likes">
+        <div class = "container">
+            <div class = "col-md-10 col-md-offset-1">
+                <div class = "row">
+                    <div class = "col-md-3">
+                        <h2 class="heading">10 THINGS I LIKE.</h2><br>
+                    </div>
+                    <div class = "col-md-9">
+                        <div class = "col-md-12 text-center">
+                            <h3 class="pill wow fadeInUp" data-wow-delay="0s"> FOOD </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay=".2s"> TV </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay=".4s"> MOVIES </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay=".6s"> MUSIC</h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay=".8s"> NAPPING </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay="1s"> DESIGN </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay="1.2s"> BALLOONS </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay="1.4s"> TEA </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay="1.6s"> GAMES </h3>
+                            <h3 class="pill wow fadeInUp" data-wow-delay="1.8s"> MEMES </h3>
+                        </div>
+                    
+                    </div> <!-- col-md-8 -->
+                </div> <!-- row -->
+            </div> <!-- col-md-10 offset-1 -->
+    </div> <!-- container -->
+    </div> <!-- Process -->
+    
+    <!-- FAVORITE APPS -->
+    <div id = "Apps">
+        <div class = "container">
+                <div class = "col-md-10 col-md-offset-1">
+            <!-- FIRST ROW: PROJECT ONE -->
+                    <div class = "row">
+                        <div class = "col-md-6 img-container">
+                                <div class = "box"> </div>
+                                <div class = "below2">
+                                    <img id = "ImgGallery3" src="images/App2.png" alt="" width="230"/>
+                                </div> <!-- below -->
+                                <div class = "above2">
+                                    <img id = "ImgGallery2" src="images/App1.png" alt="" width="180">
+                                </div> <!-- above -->
+                        </div> <!-- col-md-6 -->
+                        
+                        <!-- col-md-5 -->
+                        <div class = "col-md-6 wow fadeInUp">
+                            <h2 class="heading">MY FAVORITE APPS.</h2>
+                            <p> Twitter is an online news and social networking service. Users can post and interact with these messages known as tweets.
+                            <br><br>
+                            Snapchat is a image messaging mobile application. It has become significant because users can interact with virtual stickers and augmented reality objects.
+                            <br><br>
+                            Spotify is a music, podcast, and video streaming service. It is a service that allows users to stream music and create and listen to other people's playlists.
+                            <br><br>
+                            Youtube is a video-sharing website. Users are able to upload, view, rate, share, comment on videos.
+                            </p>
+                            <div class="a-btn" onclick="rotateGallery1()"> VIEW APPS </div>
+                      </div> <!-- col-md-8-->
+                  </div> <!-- row -->  
+          </div> <!-- col-md-10 offset-1 -->
+      </div> <!-- container -->
+</div> <!-- page2 -->
+    
+    
+    
+    
+    <!-- Smooth Scrolling -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="../js/jquery.smoothscroll.js"></script>
+    <script>$('html').smoothScroll();</script>
+    
+    <!-- Scroll through images -->
+    <script>
+        var counter = 0,
+        gallery = ["images/Me1.png", "images/Me2.png", "images/Color1.png"],
+        gallery1 = ["images/Color1.png", "images/Color2.png", "images/Color1.png"]
+        rotateGallery = function () {
+            document.getElementById("ImgGallery").src = gallery[counter];
+            document.getElementById("ImgGallery1").src = gallery1[counter];
+            counter++;
+            if (counter >= gallery.length) {
+                counter = 0;
+            }
+        };
+    </script>
+    <script>
+        var counter = 0,
+        gallery2 = ["images/SSTwitter.png", "images/SSSnapchat.png", "images/SSSpotify.png", "images/SSYoutube.png"],
+        gallery3 = ["images/LogoTwitter.png", "images/LogoSnapchat.png", "images/LogoSpotify.png", "images/LogoYoutube.png"]
+        rotateGallery1 = function () {
+            document.getElementById("ImgGallery2").src = gallery2[counter];
+            document.getElementById("ImgGallery3").src = gallery3[counter];
+            counter++;
+            if (counter >= gallery2.length) {
+                counter = 0;
+            }
+        };
+    </script>
     
     <!-- Animate.css WOW plugin -->
     <script src="../js/wow.min.js"></script>
@@ -138,15 +289,19 @@
     <script src="../js/typeit.min.js"></script>
               
     <!-- VIVUS SVG DRAWING JS -->
-<script src="../js/vivus.min.js"></script>
+    <script src="../js/vivus.min.js"></script>
+    
+				
     
     <!-- FADE OUT -->
-<script>
+    <script>
         $( document ).ready(function(){
             $('#page0').fadeIn('slow', function(){
                $('#page0').delay(7000).fadeOut(); 
             });
         });
     </script>
+
+    
 </body>
 </html>
