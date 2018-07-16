@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+    font-family: GothamPro;
+    src: url(../css/gothamfont/gotham.css);
+}
+@font-face{
+    font-family: Gotham;
+}
 
 * {
     margin: 0px;
@@ -230,7 +237,7 @@ li {
 
 @media (max-width:767px){
 #page0 {
-    background-color: #A73638;
+    background-color: #41444b;
     min-height: 70vh;
 }
 .svg_logo {
