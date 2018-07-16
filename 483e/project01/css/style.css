@@ -120,11 +120,9 @@ footer {
     min-height: 100vh;
 }
 a:visited {
-    color: #FFFFFF;
     text-decoration: none;
 }
 a:link {
-    color: #FFFFFF;
     text-decoration: none;
 }
 #nav {
