@@ -116,6 +116,12 @@ footer {
     width: 100%;
     z-index: 10;
 }
+.nav_left {
+    float: left;
+}
+.nav_right {
+    float: right;
+}
 #page100height {
     min-height: 100vh;
 }
