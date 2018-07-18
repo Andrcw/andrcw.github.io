@@ -121,6 +121,8 @@ footer {
 }
 .nav_right {
     float: right;
+    position: static;
+    text-align: right;
 }
 #page100height {
     min-height: 100vh;
