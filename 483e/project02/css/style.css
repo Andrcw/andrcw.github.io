@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 .frontimage {
     padding-bottom: 50px;
-    margin-top: -20px;
+    padding-top: 50px;
 }
 * {
     margin-top: 0px;
@@ -59,14 +59,21 @@ h4 {
     width: 100%;
     height: 0;
     padding-bottom: 100%;
-    background-color: rgba(190,30,45,0.80);
+    background-color: rgba(190,30,45,0.10);
     background-blend-mode: multiply;
     margin-top: -10px;
 }
+.square:hover{
+    background-color: rgba(190,30,45,1);
+    background-blend-mode: multiply;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
 #footer {
     background-color: #BE1E2D;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 h5 {
     font-family: Dosis;
@@ -93,7 +100,45 @@ h5.bold {
     padding-bottom: 50%;
     padding-top: 50%;
 }
-
+a:hover  {
+    text-decoration: none;
+}
+h3 a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a h3:hover {
+    color: #BE1E2D;
+}
+.pill:hover {
+    background-color: #FFFFFF;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+h3 a:visited {
+    color: #FFFFFF;
+}
+.pill{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+    border-radius: 50px;
+    line-height: 145%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p {
+    font-family: Dosis;
+    font-size: 12px;
+}
 @media (min-width: 768px){
     .navbar-nav{
         float: none;
@@ -184,5 +229,8 @@ h5.bold {
     }
 .navbar-collapse {
     padding-left: 25px;
+}
+.menu_fix {
+    margin-top: -10px;
 }
 }
