@@ -2,36 +2,88 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Andrew Nguyen</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Half & Half Website Redesign">
+<meta name="author" content="Andrew Nguyen">
+<meta name="keywords" content="Half and Half, Half & Half, boba, tea express, boba express">
+<title>Half &amp; Half Tea Express</title>
+
+<!-- Smooth Scrolling -->
+<script src="../js/jquery.smoothscroll.js"></script>
+<!-- Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- My Custom CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!-- Animate.css -->
+<link href="../css/animate.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="LeftSide">
-  <div class="LeftSideStyle">
-    <header>
-      <h1>ART 483E: Computer Assisted Graphic </h1>
-    </header>
-    <div class="MainContent">
-      <h2>Andrew Nguyen</h2>
-      <h3>Year: 2018 | Semester: Summer | Section: 01 | Time: MoWeTh 9:00AM - 12:00PM |</h3>
-    </div>
-          
-      <footer>&copy; Andrew Nguyen | 2018 </footer>
-  </div>
+    
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+         <a class="navbar-brand" href="#"><img class="logo_left" src="Images/Logo.svg" alt="" width="100"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <!-- MENU -->
+            <li class="nav_pad nav_menu"><a href="#">MENU</a></li>
+            
+            <!-- LOCATIONS -->
+            <li class="nav_pad nav_locations"><a href="#">LOCATIONS</a></li>
+            
+            <!-- LOGO -->
+            <li class="nav_pad"><a class="logo_center_fix" href="#"><img class="logo_center" src="Images/Logo.svg" alt="" width="100"/></a></li>
+            
+            <!-- ABOUT -->
+            <li class="nav_pad nav_about"><a href="#">ABOUT</a></li>
+            
+            <!-- CONTACT -->
+            <li class="nav_pad nav_contact"><a href="#">CONTACT</a></li>
+            
+            <div class="nav_underline"> </div>
+            
+        </ul> <!-- nav navbar-nav -->
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    
+<div id="Home">
+    <div class="container">
+        <div class="col-md-12">
+            <img class="img-responsive" src="Images/FrontIMG.jpg" width="6045" height="4250" alt=""/>
+        </div>
+    </div>
 </div>
-<div class="RightSide">
-  <div class="RightSideStyle">
-    <nav class="PrimaryNav">
-      <ul>
-        <li><a href="project01/project01.html" target="_blank">Project 01: Hand code HTML</a></li>
-        <li>Project 02:</li>
-        <li>Project 03:</li>
-        <li>Project 04: </li>
-      </ul>
-    </nav>
-  </div>
-</div>
+    
+    
+    
 </body>
+<!-- body -->
+
+<!-- Smooth Scrolling -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="../js/jquery.smoothscroll.js"></script>
+<script>$('html').smoothScroll();</script>
+<!-- Animate.css WOW plugin -->
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 </html>

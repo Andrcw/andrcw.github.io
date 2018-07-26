@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+.frontimage {
+    padding-bottom: 50px;
+    margin-top: -20px;
+}
+* {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.logo_left {
+    margin-top: -8px;
+}
+.logo_center {
+    margin-top: -13px;
+    margin-bottom: -19px;
+}
+.nav {
+    font-family: Dosis;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+ul.nav a:hover {
+    color: #000000 !important;
+}
+.fullwidth {
+    background-color: #be1e2d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+h3 {
+    color: #FFFFFF;
+    font-family: Dosis;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+h4 {
+    color: #FFFFFF;
+    font-family: Dosis;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.clicknav {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.square {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: rgba(190,30,45,0.80);
+    background-blend-mode: multiply;
+    margin-top: -10px;
+}
+#footer {
+    background-color: #BE1E2D;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h5 {
+    font-family: Dosis;
+    color: #EF6E8C;
+    font-weight: lighter;
+    font-size: 10px;
+}
+h5.bold {
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.footer_left {
+    float: left;
+    padding-right: 70px;
+}
+.vertical-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+    padding-top: 50%;
+}
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float: none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .nav_pad {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .navbar{
+        background-color: #FFFFFF;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .nav_underline_none {
+        width: 0px;
+        margin-left: 300px;
+    }
+    .nav_underline_menu {
+        width: 34px;
+        margin-left: 35px;
+    }
+    .nav_underline_locations {
+        width: 64px;
+        margin-left: 140px;
+    }
+    .nav_underline_about {
+        width: 41px;
+        margin-left: 444px;
+    }
+    .nav_underline_contact {
+        width: 54px;
+        margin-left: 555px;
+    }
+    .nav_underline {
+        height: 7px;
+        background: #be1e2d;
+        border: none;
+        transition: .3s ease-in-out;
+        margin-top: 34px;
+        padding-top: 0px;
+        z-index: 10;
+        border-radius: 25px;
+    }
+    .nav_menu:hover ~ .nav_underline {
+        width: 34px;
+        margin-left: 35px;
+    }
+    .nav_locations:hover ~ .nav_underline {
+        width: 64px;
+        margin-left: 140px;
+    }
+    .nav_about:hover ~ .nav_underline {
+        width: 41px;
+        margin-left: 444px;
+    }
+    .nav_contact:hover ~ .nav_underline {
+        width: 54px;
+        margin-left: 555px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-brand {
+        display: inherit;
+    }
+    .logo_center{
+        display: none;
+    }
+    .logo_center_fix{
+    margin-top: -21px;
+    z-index: -1;
+    }
+    .navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+.navbar-collapse {
+    padding-left: 25px;
+}
+}
