@@ -59,16 +59,38 @@ h4 {
     width: 100%;
     height: 0;
     padding-bottom: 100%;
-    background-color: rgba(190,30,45,0.10);
+    background-color: rgba(190,30,45,0.40);
     background-blend-mode: multiply;
     margin-top: -10px;
+    -webkit-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
 }
 .square:hover{
     background-color: rgba(190,30,45,1);
     background-blend-mode: multiply;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.rect:hover{
+    background-color: rgba(190,30,45,1);
+    background-blend-mode: multiply;
+    -webkit-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.rect {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    background-color: rgba(190,30,45,0.40);
+    background-blend-mode: multiply;
+    margin-top: -10px;
+    -webkit-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
 }
 #footer {
     background-color: #BE1E2D;
@@ -100,6 +122,14 @@ h5.bold {
     padding-bottom: 50%;
     padding-top: 50%;
 }
+.vertical-align-rect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 33%;
+    padding-top: 33%;
+}
 a:hover  {
     text-decoration: none;
 }
@@ -115,9 +145,6 @@ a h3:hover {
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-}
-h3 a:visited {
-    color: #FFFFFF;
 }
 .pill{
     color: white; 
@@ -137,7 +164,19 @@ h3 a:visited {
 }
 p {
     font-family: Dosis;
-    font-size: 12px;
+    font-size: 14px;
+}
+h2 {
+    font-family: Dosis;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+a:visited {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
 }
 @media (min-width: 768px){
     .navbar-nav{
@@ -173,7 +212,7 @@ p {
     }
     .nav_underline_about {
         width: 41px;
-        margin-left: 444px;
+        margin-left: 454px;
     }
     .nav_underline_contact {
         width: 54px;
@@ -199,11 +238,15 @@ p {
     }
     .nav_about:hover ~ .nav_underline {
         width: 41px;
-        margin-left: 444px;
+        margin-left: 454px;
     }
     .nav_contact:hover ~ .nav_underline {
         width: 54px;
-        margin-left: 555px;
+        margin-left: 564px;
+    }
+    .nav_logo:hover ~ .nav_underline {
+        width: 0px;
+        margin-left: 300px;
     }
 }
 @media (max-width: 767px) {
