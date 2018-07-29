@@ -178,6 +178,9 @@ a:visited {
 a:link {
     text-decoration: none;
 }
+h5:hover {
+    color: #841A1C;
+}
 @media (min-width: 768px){
     .navbar-nav{
         float: none;
