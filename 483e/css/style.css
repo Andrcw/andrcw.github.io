@@ -94,3 +94,18 @@ a:hover {
     text-decoration: none;
     color: #ff671d;
 }
+p {
+    font-family: Montserrat;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.bar {
+    background-color: #EAEAEA;
+    height: 20px;
+    float: left;
+}
+.bardark {
+    background-color: #979797;
+    height: 20px;
+    float: left;
+}
